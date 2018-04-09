@@ -1,22 +1,20 @@
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
+// Components
+import { LayoutComponent } from './components/shared/layout/layout/layout.component';
+import { HomeComponent } from './components/home/home.component';
 // Example of layout/DashBoard Routing
-/**const APP_ROUTES: Routes = [
+const APP_ROUTES: Routes = [
     // Rutas con AppLayout
     {
       path: '',
-      component: AppLayoutComponent,
+      component: LayoutComponent,
       children: [
         { path: 'home', component: HomeComponent },
       ]
     },
     // { path: 'routePath', component: Component },
-    { path: '**', pathMatch: 'full', redirectTo: '' }
-  ];*/
-
-const APP_ROUTES = [
-    { path: '', component : AppComponent },
     { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
