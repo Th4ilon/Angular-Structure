@@ -15,7 +15,6 @@ const APP_ROUTES: Routes = [
         { path: 'home', component: HomeComponent },
       ]
     },
-    // { path: 'routePath', component: Component },
     { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
