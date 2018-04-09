@@ -1,0 +1,66 @@
+{
+  "Menú General": [
+    {
+      "fake A": [
+        {
+          "titulo": "fake1",
+          "link": "/fake/fake",
+          "hidden": true,
+          "roles": [ 1 ]
+        },
+        {
+          "titulo": "fake2",
+          "link": "/fake/fake",
+          "hidden": true,
+          "roles": [ 1 ]
+        }
+      ]
+    },
+    {
+      "fake B": [
+        {
+          "titulo": "fake1",
+          "link": "/fake/fake",
+          "hidden": true,
+          "roles": [ 1, 2 ]
+        },
+        {
+          "titulo": "fake2",
+          "link": "/fake/fake",
+          "hidden": true,
+          "roles": [ 1, 2 ]
+        },
+        {
+          "titulo": "fake3",
+          "link": "/fake/fake",
+          "hidden": true,
+          "roles": [ 1, 2 ]
+        }
+      ]
+    }
+  ],
+  "fake C": [
+    {
+      "Afake": [
+        {
+          "titulo": "fake1",
+          "link": "/fake",
+          "hidden": true,
+          "roles": [ 1 ]
+        },
+        {
+          "titulo": "fake2",
+          "link": "/fake",
+          "hidden": true,
+          "roles": [ 1 ]
+        },
+        {
+          "titulo": "fake3",
+          "link": "/fake/fake",
+          "hidden": true,
+          "roles": [ 1 ]
+        }
+      ]
+    }
+  ]
+}

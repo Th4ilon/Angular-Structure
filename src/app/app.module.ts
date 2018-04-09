@@ -1,5 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { McBreadcrumbsModule } from 'ngx-breadcrumbs';
 
 // Routes
 import { APP_ROUTING } from './app.routes';
@@ -33,8 +37,12 @@ import { HomeComponent } from './components/home/home.component';
       MenuComponent
   ],
   imports: [
+    NgbModule.forRoot(),
     BrowserModule,
-    APP_ROUTING
+    FormsModule,
+    HttpModule,
+    APP_ROUTING,
+    McBreadcrumbsModule.forRoot()
   ],
   providers: [BaseService],
   bootstrap: [AppComponent]

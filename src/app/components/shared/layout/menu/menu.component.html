@@ -1,3 +1,53 @@
-<p>
-  menu works!
-</p>
+<div class="">
+  <div class="">
+      <div id="MenuApp" class="">
+          <div class="">
+              <section *ngFor="let itemL1 of getMenuArray(); let iL1 = index">
+                  <div 
+                  class="" 
+                  id="cab{{getMenuId(1,iL1)}}" 
+                  data-toggle="collapse" 
+                  (click)="toggleCollapse(getMenuId(1,iL1))"
+                  [attr.aria-expanded]="isCollapsed(getMenuId(1,iL1))" aria-controls="getMenuId(1,iL1)">
+
+                      <div class="panel-title">
+                          <span class="glyphicon glyphicon-bell"></span>&nbsp; {{itemL1}}
+                      </div>
+
+                  </div>
+                  <div 
+                  id="{{getMenuId(1,iL1)}}" 
+                  class="" [ngbCollapse]="isCollapsed(getMenuId(1,iL1))">
+                      <div class="panel-body">
+                          <section *ngFor="let opcion of menu[itemL1]; let i = index">
+                              <div 
+                              class="menuLateralItem" 
+                              *ngIf="getCurrentKey(opcion, 0)" 
+                              data-toggle="collapse" 
+                              (click)="toggleCollapse(getCurrentKey(opcion, 0))">
+                              {{getCurrentKey(opcion, 0)}}
+                              </div>
+
+                              <ul class="nav flex-column">
+                                  <li 
+                                  id="mnu1{{i+1}}{{j+1}}" 
+                                  *ngFor="let item of opcion[getCurrentKey(opcion, 0)]; let j = index"
+                                  [routerLink]="[item?.link]" 
+                                  [routerLinkActive]="'activo'" 
+                                  [hidden]="item?.hidden" 
+                                  skipLocationChange
+                                  [ngbCollapse]="isCollapsed(getCurrentKey(opcion, 0))">
+                                  
+                                      <a (click)="reiniciaListas(item?.titulo);">
+                                          {{item?.titulo}}
+                                      </a>
+                                  </li>
+                              </ul>
+                          </section>
+                      </div>
+                  </div>                    
+              </section>
+          </div>
+      </div>           
+  </div>
+</div>

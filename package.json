@@ -21,7 +21,12 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "@ng-bootstrap/ng-bootstrap": "^1.1.1",
+    "bootstrap": "^4.0.0",
+    "classlist": "^1.0.1",
     "core-js": "^2.4.1",
+    "ng2-ckeditor": "^1.2.0",
+    "ngx-breadcrumbs": "0.0.3",
     "rxjs": "^5.5.8",
     "zone.js": "^0.8.19"
   },
