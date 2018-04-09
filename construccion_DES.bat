@@ -1,0 +1,1 @@
+ng build --bh /cp.presentacion.web-angular/static/dist/

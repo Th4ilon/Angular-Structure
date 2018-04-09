@@ -1,0 +1,23 @@
+<!--tableContainer : style class-->
+<div class="row">	
+    <div class="col-xs-12 bootstrap-table">
+      <table class="table table-striped">
+        <thead class="thead-default">
+          <tr>
+            <th class="text-right" *ngFor="let item of gtSettings">
+                {{item.columnName}}
+            </th>
+          </tr>
+        </thead>
+        <tbody
+        *ngFor="let data of gtData | keys" >
+          <tr   >
+                  <td class="text-right" *ngFor="let item of data; let i = index" (click)="detalle(data[0])" >
+                    {{item}}
+                  </td>
+          </tr>
+        </tbody>
+      </table>
+      <!--<app-paginacion-factura [pagModel]= 'pagModel' (nextPage)="_Changed($event)"></app-paginacion-factura>-->
+    </div>
+</div>    
