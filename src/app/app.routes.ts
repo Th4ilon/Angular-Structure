@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 // Components
 import { LayoutComponent } from './components/shared/layout/layout/layout.component';
 import { HomeComponent } from './components/home/home.component';
+
 // Example of layout/DashBoard Routing
 const APP_ROUTES: Routes = [
     // Rutas con AppLayout
